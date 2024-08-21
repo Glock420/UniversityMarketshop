@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+}
+body{
+    background: #dfdfdf;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #9A0D13;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: whitesmoke;
+    font-style: bold;
+    font-weight: 800;
+}
+
+header .logo:hover{
+    text-decoration: none;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    color: whitesmoke;
+}
+
+header .navbar .selectedNav{
+    font-size: 1.80rem;
+    font-weight: bold;
+    color: #4D0609;
+    background: #fff;
+}
+
+header .navbar a:hover{
+    text-decoration: none;
+    font-size: 1.90rem;
+    font-weight: bold;
+    color: #4D0609;
+}
+
+header .icons a{
+     font-size: 2rem;
+     color: white;
+     margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #4D0609;
+} 
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: antiquewhite;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+.selectedNav{
+    font-size: 1.80rem;
+    font-weight: bold;
+    color: #4D0609;
+    background: #fff;
+    border-radius: 1rem;
+    border: .1rem solid rgba(0,0,0,.3);
+}
+
+
+/*-----------------------------------------------------------*/
+
+#search-box {
+    position: absolute;
+    top: 50px;
+    background-color: #fff; /* Change the background color to white */
+    color: #000; /* Change the text color to black */
+    z-index: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#search-box.active {
+    display: block;
+}
+
+#search-box button {
+    width: auto; /* Let the button width adjust to its content */
+    height: 30px; /* Reduce the button height */
+    background: transparent;
+    border: 1px solid #000; /* Adjust the border */
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 1rem; /* Reduce the font size */
+    color: #000;
+    font-weight: 500;
+}
+
+#search-box button:hover {
+    background: #000;
+    color: #fff; /* Invert the colors on hover */
+}
+
+#search-box input {
+    background: transparent;
+    width: 70%; /* Adjust the input width */
+    height: 30px;
+    border: 1px solid #000; /* Add a border to the input */
+    outline: none;
+    font-size: 1rem; /* Reduce the font size */
+    color: #000;
+    padding: 5px;
+    margin-right: 5px; /* Add a small margin between input and button */
+}
+
+::placeholder {
+    color: #adabab;
+}
+
+
+
+
+
+/*=====================================================*/
+
+section{
+    display: flex;
+    background: #dfdfdf;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+section .form-box{
+    position: relative;
+    width: 600px;
+    height: 550px;
+    background: #4D0609;
+    box-shadow: 4px 4px 20px #000;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1{
+    font: 4rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.boxInput{
+    position:relative;
+    width: 310px;
+    margin: 40px 0;
+    border-bottom: 2px solid #fff;
+}
+.boxInput label{
+    position: absolute;
+    top: 10%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.40em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.boxInput input:focus ~ label,
+.boxInput input:valid ~ label{
+     top: -12px;
+}
+.boxInput input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.70rem;
+    padding: 0 35px 0 5px;
+    color:white;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: black;
+}
+
+button:hover {
+    border: .4rem solid #fff;
+    background: #4D0609;
+    color: whitesmoke;
+}
+
+.login {
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.login p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/*----------------------------Media Queries---------------------------*/
+@media(max-width:1375px) {
+
+    html{
+        font-size: 70%;
+    }
+    section{
+        padding-top: 15%;
+    }
+
+    header{
+        padding: 3rem;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+
+}
+
+
+@media(max-width:991px) {
+
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding-top: 20%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    header{
+        padding: 4rem;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+
+@media(max-width:450px) {
+
+    html{
+        font-size: 35%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    section .form-box{
+        width: 400px;
+        height: 500px;
+    }
+
+}

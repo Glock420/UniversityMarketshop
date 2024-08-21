@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+}
+body{
+    background: #dfdfdf;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #9A0D13;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: whitesmoke;
+    font-style: bold;
+    font-weight: 800;
+}
+
+header .logo:hover{
+    text-decoration: none;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    color: whitesmoke;
+}
+
+header .navbar .selectedNav{
+    font-size: 1.80rem;
+    font-weight: bold;
+    color: #4D0609;
+    background: #fff;
+}
+
+header .navbar a:hover{
+    text-decoration: none;
+    font-size: 1.90rem;
+    font-weight: bold;
+    color: #4D0609;
+}
+
+header .icons a{
+     font-size: 2rem;
+     color: white;
+     margin-left: 1.5rem;
+     text-decoration: none;
+}
+
+header .icons a:hover{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #4D0609;
+} 
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: antiquewhite;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+section{
+    display: flex;
+    background: #9A0D13;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.selectedNav{
+    font-size: 1.80rem;
+    font-weight: bold;
+    color: #4D0609;
+    background: #fff;
+    border-radius: 1rem;
+    border: .1rem solid rgba(0,0,0,.3);
+}
+
+
+/*===============================================================*/
+section{
+    background: #dfdfdf;
+}
+
+.container{
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.container h3{
+    color: #9A0D13;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+
+.account_container{
+	width:100%;
+}
+
+.account_container h2{
+	text-transform: capitalize;
+    font-size: 4rem;
+    color: #9A0D13;
+    font-weight: 800;
+    padding-bottom: 1.75rem;
+}
+
+.orderBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderItem{
+    position: relative;
+	background-color: #9A0D13;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	padding: 20px 20px;
+	border-radius: 10px;
+	transition: .3s;
+}
+
+.description{
+    color: #fff;
+    width: 50%;
+}
+.description h5{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.description h6{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.description p{
+    font-size: 1.75rem;
+}
+.remove{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+.image{
+    position: relative;
+    width: 50%;
+	height:100%;
+    display: flex;
+    justify-content: right;
+}
+
+.details_container{
+	display: flex;
+	width: 50%;
+	height:100%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.details{
+	position: relative;
+    padding-left: 200px;
+}
+.details p{
+    font-size: 1.3rem;
+    color: whitesmoke;
+    padding-bottom: 1.5rem;
+}
+
+.desc {
+    display: flex;
+    align-items: right;
+    flex-direction: column;
+}
+
+.image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.total-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #9A0D13;
+}
+
+.checkout-btn {
+    color: #9A0D13;
+    background-color: #fff;
+    font-size: 1.5rem; 
+    padding: 5px 10px; 
+    font-weight: 800;
+}
+.checkout-btn:hover {
+    color: #fff;
+    background-color: #9A0D13;
+    font-size: 1.5rem; 
+    padding: 5px 10px; 
+    font-weight: 800;
+}
+
+.qnty{
+    font-size: 1.5rem;
+}
+
+.subtotal{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+/*====================================================PROD FULL DETAILS======================================================*/
+
+
+.product-details-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding-top: 180px;
+    color: #9A0D13;
+}
+
+.product-images {
+    flex: 1;
+    text-align: center;
+}
+
+#main-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    max-width: 40px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.product-info {
+    color: #9A0D13;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #9A0D13;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.product-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.variation {
+    margin-top: 10px;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+select {
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #9A0D13;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+select {
+    font-size: 1.5rem;
+}
+
+.quantity {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.quantity-input {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.quantity-input input{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.addCart{
+    font-size: 1.5rem; 
+    padding: 5px 10px; 
+    font-weight: 800;
+    background-color: #9A0D13;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.addCart:hover{
+    background-color: #575757;
+}
+
+
+button#decrease-quantity,
+button#increase-quantity {
+    background-color: #9A0D13;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+
+
+
+.product-description {
+    margin-top: 20px;
+    white-space: pre-line;
+}
+
+        /* Style for the seller information */
+.seller-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style for the profile picture */
+.profile-pic {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 10px;
+}
+
+/* Style for the organization name */
+.org-name {
+    font-weight: bold;
+    margin: 0;
+    padding-right: 25px;
+}
+
+/* Style for the "Chat Now" button */
+.chat-button {
+    background-color: #9A0D13;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Style for the customer reviews section header */
+.customer-reviews-header {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #9A0D13;
+    border-bottom: 1px solid #9A0D13;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-reviews-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Style for the overall rating and review button */
+.average-rating {
+    display: flex;
+    align-items: center;
+}
+
+.average-rating p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Style for the star ratings */
+.rating-stars {
+    font-size: 24px;
+    color: #ffcc00; /* Set the star color to yellow */
+    margin-right: 10px;
+}
+
+.rating-stars i {
+    margin-right: 5px;
+}
+
+/* Style for the "Review Product" button */
+.review-button {
+    background-color: #9A0D13;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.review-button:hover {
+    background-color: #575757;
+}
+
+/* Style for individual customer reviews */
+.customer-reviews {
+    margin-top: 20px;
+}
+
+.review {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+.review-user {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.review-content {
+    flex: 3;
+}
+
+/* Style for the star ratings in individual reviews */
+.review .rating-stars {
+    font-size: 18px;
+    color: #ffcc00; /* Set the star color to yellow */
+    margin-bottom: 10px;
+}
+
+.review .rating-stars i {
+    margin-right: 5px;
+}
+
+.review-text {
+    white-space: pre-line;
+}
+
+/* Style for the div containing the average rating and review button */
+.average-rating-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.average-rating-group .average-rating {
+    flex: 1;
+}
+
+.average-rating-group .review-button {
+    margin-left: 20px;
+}
+
+
+
+
+
+/*-----------------------------------------------------------*/
+#search-box {
+    position: absolute;
+    top: 50px;
+    background-color: #fff; /* Change the background color to white */
+    color: #000; /* Change the text color to black */
+    z-index: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#search-box.active {
+    display: block;
+}
+
+#search-box button {
+    width: auto; /* Let the button width adjust to its content */
+    height: 30px; /* Reduce the button height */
+    background: transparent;
+    border: 1px solid #000; /* Adjust the border */
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 1rem; /* Reduce the font size */
+    color: #000;
+    font-weight: 500;
+}
+
+#search-box button:hover {
+    background: #000;
+    color: #fff; /* Invert the colors on hover */
+}
+
+#search-box input {
+    background: transparent;
+    width: 70%; /* Adjust the input width */
+    height: 30px;
+    border: 1px solid #000; /* Add a border to the input */
+    outline: none;
+    font-size: 1rem; /* Reduce the font size */
+    color: #000;
+    padding: 5px;
+    margin-right: 5px; /* Add a small margin between input and button */
+}
+
+::placeholder {
+    color: #adabab;
+}
+
+
+/*----------------------------Media Queries---------------------------*/
+@media(max-width:1375px) {
+
+    html{
+        font-size: 70%;
+    }
+    section{
+        padding-top: 15%;
+    }
+
+    header{
+        padding: 3rem;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+
+}
+
+
+@media(max-width:991px) {
+
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding-top: 20%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    header{
+        padding: 4rem;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+
+@media(max-width:450px) {
+
+    html{
+        font-size: 35%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    section .login-box{
+        width: 350px;
+        height: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

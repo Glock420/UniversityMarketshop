@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    /*box-sizing: border-box;*/
+}
+
+body{
+    background: #dfdfdf;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #4D0609;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 40px 0 70px 0;
+}
+.logo .fas{
+    font-size: 3rem;
+    text-decoration: none;
+    color: #DFDFDF;
+}
+.logo:hover{
+    color: #DFDFDF;
+}
+.logo img{
+    margin-left: 20px;
+    width: 270px;
+    height: 65px;
+}
+a{
+    position: relative;
+    color: #DFDFDF;
+    font-size: 1.2rem;
+    display: table;
+    width: 400px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 35px;
+    text-decoration: none;
+}
+.nav-item{
+    text-decoration: none;
+}
+nav a:hover{
+    background: #8b8b8b;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+nav:hover{
+    width: 400px;
+    transition: all 0.5s ease;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    font-weight: 800;
+    color: #4D0609;
+    background: goldenrod;
+}
+.selectedNav{
+    color: #4D0609;
+    background: #fff;
+}
+.selectedNav:hover{
+    background: #8b8b8b;
+    color: #fff;
+    font-weight: 800;
+}
+
+/*================================Header===============================*/
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #6A090D;
+    padding: 2rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    z-index: 1;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    color: #dfdfdf;
+}
+header h1{
+    color: #DFDFDF;
+    font-weight: 800;
+}
+header .icons a{
+    font-size: 1rem;
+    color: #dfdfdf;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+header .icons a:hover{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #8b8b8b;
+} 
+header .icons img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+  
+  .icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px; 
+  }
+  
+  .icons span {
+    font-size: 1rem;
+    margin-right: 20px;
+    white-space: nowrap; 
+  }
+  
+  #notificationBell {
+    margin-left: auto; 
+  }
+
+  .notification-dropdown {
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: auto;
+    max-height: 300px; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+
+    top: 80px;
+    z-index: 1;
+    overflow-y: auto; 
+}
+.notification-dropdown.active {
+    display: block;
+  }
+
+
+/*======================CONTENT==========================*/
+
+.container{
+	align-items: center;
+	justify-content: center;
+	position: relative;
+    padding-top: 12%;
+    padding-bottom: 5%;
+}
+
+.container h3{
+    color: #6A090D;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.details_container{
+    width:100%;
+    color: #6A090D;
+    font-size: 1rem;
+}
+.details_container h2{
+	text-transform: capitalize;
+    font-size: 2rem;
+    color: #6A090D;
+    font-weight: 800;
+}
+.flex-container{
+    display: flex;
+}
+.detailsBox,
+    .ppBox {
+        flex: 1;
+        width: 50%;
+    }
+.input-box{
+    position: relative;
+    width: 350px;
+    margin: 50px 0;
+}
+.input-box label {
+    position: absolute;
+    bottom: 3.3rem;
+    left: 5px;
+    font-size: 1rem;
+    color: #6A090D;
+    pointer-events: none;
+}
+.input-box input{
+    width: 100%;
+    height: 3rem;
+    border: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.3rem;
+    color: black;
+    padding: 0 35px 0 5px;
+}
+
+.save{
+    padding-bottom: 20%;
+}
+.saveBtn{
+    font-size: 1rem;
+    float: left;
+    width: 150px;
+    height: 40px;
+
+    background: transparent;
+    color: #6A090D;
+    border: 5px solid #6A090D;
+    border-radius: 50px;
+}
+.saveBtn:hover {
+    background: #4D0609;
+    color: whitesmoke;
+    font-weight: 800;
+}
+.changeBtn{
+    font-size: 1rem;
+    float: left;
+    width: 250px;
+    height: 40px;
+    background: transparent;
+    color: #6A090D;
+    border: 5px solid #6A090D;
+    border-radius: 50px;
+}
+.changeBtn:hover {
+    background: #4D0609;
+    color: whitesmoke;
+    font-weight: 800;
+}
+.ppBox{
+	position: relative;
+    padding-left: 150px;
+
+	height:200%;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+}
+.ppBox img{
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 0;
+    border: 5px #6A090D;
+    padding: 3px;
+    background-color: whitesmoke;
+}
+.ppBox label{
+    align-self: center;
+}
+.changePass{
+    display: flex;
+}
+.changePass h4{
+	text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #6A090D;
+    font-weight: 800;
+    padding-bottom: 1.75rem;
+}
+.pass{
+    position: relative;
+    width: 350px;
+    margin: 50px 0;
+}
+.pass label {
+    position: absolute;
+    bottom: 3.3rem;
+    left: 5px;
+    font-size: 1rem;
+    color: #6A090D;
+    pointer-events: none;
+}
+.pass input{
+    width: 100%;
+    height: 3rem;
+    border: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.3rem;
+    color: black;
+    padding: 0 35px 0 5px;
+}
+
+.secondFlex-container{
+    display: flex;
+    justify-content: center;
+}
+.changePass, .address {
+    flex: 1;
+    width: 50%;
+}
+.address{
+    margin-top: 0;
+    padding-top: 0;
+}
+.address p{
+    font-size: 1rem;
+    color: #6A090D;
+}
+.address h3{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #6A090D;
+    font-weight: 800;
+}
+.addr{
+    padding-bottom: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.addrBack{
+    font-size: 1rem;
+    float: left;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    color: #6A090D;
+    border: 5px solid #6A090D;
+    border-radius: 50px;
+}
+.addrNew{
+    font-size: 1rem;
+    float: right;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    color: #6A090D;
+    border: 5px solid #6A090D;
+    border-radius: 50px;
+}
+button.addrNew{
+    font-size: 1rem;
+    float: right;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    background: transparent;
+    color: #6A090D;
+    border: 5px solid #6A090D;
+    border-radius: 50px;
+}
+.addrBack:hover {
+    background: #4D0609;
+    color: whitesmoke;
+    font-weight: 800;
+} 
+.addrNew:hover {
+    background: #4D0609;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+
+.customBtn{
+    margin-right: 10px;
+    width: 100px;
+}

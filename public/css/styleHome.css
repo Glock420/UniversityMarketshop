@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    background: #dfdfdf;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #9A0D13;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: whitesmoke;
+    font-style: bold;
+    font-weight: 800;
+}
+
+header .logo:hover{
+    text-decoration: none;
+}
+
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    color: whitesmoke;
+}
+
+header .navbar .selectedNav{
+    font-size: 1.80rem;
+    font-weight: bold;
+    color: #4D0609;
+    background: #fff;
+}
+
+header .navbar a:hover{
+    text-decoration: none;
+    font-size: 1.90rem;
+    font-weight: bold;
+    color: #4D0609;
+}
+
+header .icons a{
+     font-size: 2rem;
+     color: white;
+     margin-left: 1.5rem;
+     text-decoration: none;
+}
+
+header .icons a:hover{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #4D0609;
+} 
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: antiquewhite;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.selectedNav{
+    font-size: 1.80rem;
+    font-weight: bold;
+    color: #4D0609;
+    background: #fff;
+    border-radius: 1rem;
+    border: .1rem solid rgba(0,0,0,.3);
+}
+
+.home{
+    background-image: url('../default_pics/bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20%;
+}
+
+/*==========================================================================*/
+
+
+.products{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   	gap: 60px;
+   	text-align: center;
+	padding-top: 4%;
+    padding-bottom: 5%;
+}
+.shirt{
+	position: relative;
+	background-color: #9A0D13;
+	width: 300px;
+	height: 100%;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 20px 40px;
+	border-radius: 10px;
+	transition: .3s;
+}
+.shirt:hover{
+	transform:translateY(-15px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.image{
+	width: 100%;
+	height: 60%;
+	display: grid;
+	place-items: center;
+}
+.image img{
+	width: 250px;
+}
+.description{
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+}
+.description h3{
+	font-size: 2em;
+	text-transform: capitalize;
+	padding-top: 25px;
+}
+.description h6{
+	font-size: 1.5em ;
+	color: #fbaa09;;
+}
+.description p{
+	font-size: 18px;
+}
+
+
+/*=========================================================================*/
+
+
+section{
+    display: flex;
+    background: #dfdfdf;
+    padding-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+section .login-box{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    background: #4D0609;
+    box-shadow: 4px 4px 20px #000;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h2{
+    color: #000;
+    text-align: center;
+    font-weight: 800;
+}
+
+.input-box{
+    position: relative;
+    width: 310px;
+    margin: 40px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10%;
+    left: 5px;
+    transform: translateY(-80%);
+    font-size: 1.5rem;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -10px;
+}
+ 
+.input-box input{
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 1.75rem;
+    color: #fff;
+    padding: 0 35px 0 5px;
+
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+.forgot-pass {
+    margin: -15px 0 15px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.forgot-pass a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: .4rem solid #fff;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+button:hover {
+    background: whitesmoke;
+    color: #4D0609;
+}
+
+.register {
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+
+/*-----------------------------------------------------------*/
+#search-box {
+    position: absolute;
+    top: 50px;
+    background-color: #fff; /* Change the background color to white */
+    color: #000; /* Change the text color to black */
+    z-index: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#search-box.active {
+    display: block;
+}
+
+#search-box button {
+    width: auto; /* Let the button width adjust to its content */
+    height: 30px; /* Reduce the button height */
+    background: transparent;
+    border: 1px solid #000; /* Adjust the border */
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 1rem; /* Reduce the font size */
+    color: #000;
+    font-weight: 500;
+}
+
+#search-box button:hover {
+    background: #000;
+    color: #fff; /* Invert the colors on hover */
+}
+
+#search-box input {
+    background: transparent;
+    width: 70%; /* Adjust the input width */
+    height: 30px;
+    border: 1px solid #000; /* Add a border to the input */
+    outline: none;
+    font-size: 1rem; /* Reduce the font size */
+    color: #000;
+    padding: 5px;
+    margin-right: 5px; /* Add a small margin between input and button */
+}
+
+::placeholder {
+    color: #adabab;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+.container {
+    margin-top: 30px;
+    padding-top: 10%;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.rate {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the direction to start with empty stars */
+    margin-bottom: 15px;
+    float: left;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.rate input {
+    display: none; /* Hide the radio inputs */
+}
+
+.rate label {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.rate label:before {
+    content: "\2605"; /* Unicode character for a star */
+}
+
+.rate input:checked ~ label:before {
+    content: "\2605"; /* Unicode character for a filled star */
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.review-textarea {
+    font-size: 1.5rem;
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+
+/*----------------------------ORDER DETAILS---------------------------------------------------*/
+
+.ordExch {
+    width: 100%;
+}
+
+.ordContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.account_container {
+    width: 80%;
+}
+
+.alert {
+    max-width: 75%; /* Adjust the width to your preference */
+    margin: 0 auto; /* Center the alert */
+}
+
+.order-item, .exchange-item {
+    color: #dfdfdf;
+    background-color: #9A0D13;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 100%;  
+}
+
+.detailsOrdExch{
+    width: 100%;
+}
+.detailsOrdExch:hover{
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+.ordItems, .exchItems {
+    width: 100%;
+
+}
+
+.order-item-row, .exchange-item-row {
+    width: 100%;
+}
+
+.order-item-details, .exchange-item-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.order-item-details img, .exchange-item-details img{
+    width: 100px;
+    height: 100px;
+}
+
+.product-info {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.product-quantity {
+    width: 100%;
+    text-align: right;
+}
+
+.proofRef {
+    width: 100%;
+}
+
+/*----------------------------CHECKOUT--------------------------------------------------*/
+
+
+.checkoutForm{
+    padding-top: 9%;
+    padding-bottom: 5%;
+}
+
+.container h2,
+.address h4,
+.order-item-details {
+    font-size: 200%; 
+}
+
+.form-group label,
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 200%; 
+    color: #000;
+}
+
+.btn {
+    font-size: 200%; 
+}
+
+.table th,
+.table td,
+.product-info,
+.product-quantity,
+.order-status {
+    font-size: 200%;
+}
+
+.alert {
+    font-size: 120%;
+}
+
+.shippingText{
+    font-size: 200%; 
+}
+
+
+
+.widgeters{
+    padding-top: 75px;
+}
+
+
+.cancelOrd{
+    padding-top: 9%;
+    padding-left: 30%;
+    font-size: 90%;
+}
+
+.cancelOrd h1{
+    font-size: 200%;
+    color: #000;
+}
+
+
+
+
+
+
+/*----------------------------Media Queries---------------------------*/
+@media(max-width:1375px) {
+
+    html{
+        font-size: 70%;
+    }
+    section{
+        padding-top: 15%;
+    }
+
+    header{
+        padding: 3rem;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+
+}
+
+
+@media(max-width:991px) {
+
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding-top: 20%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    header{
+        padding: 4rem;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+
+}
+
+@media(max-width:768px) {
+
+    html{
+        font-size: 50%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+}
+
+@media(max-width:450px) {
+
+    html{
+        font-size: 35%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: whitesmoke;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        color: #9A0D13;
+        background: whitesmoke;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    section .login-box{
+        width: 350px;
+        height: 400px;
+    }
+}
